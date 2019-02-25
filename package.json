@@ -1,8 +1,8 @@
 {
-  "name": "log-check",
-  "productName": "log-check",
+  "name": "loggd",
+  "productName": "loggd",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Log the things that matter to you",
   "main": "src/index.ts",
   "scripts": {
     "start": "electron-forge start",
@@ -20,41 +20,6 @@
       "yarn format",
       "git add"
     ]
-  },
-  "keywords": [],
-  "author": "samuherek",
-  "license": "MIT",
-  "config": {
-    "forge": {
-      "make_targets": {
-        "win32": [
-          "squirrel"
-        ],
-        "darwin": [
-          "zip"
-        ],
-        "linux": [
-          "deb",
-          "rpm"
-        ]
-      },
-      "electronPackagerConfig": {
-        "packageManager": "yarn"
-      },
-      "electronWinstallerConfig": {
-        "name": "log_check"
-      },
-      "electronInstallerDebian": {},
-      "electronInstallerRedhat": {},
-      "github_repository": {
-        "owner": "",
-        "name": ""
-      },
-      "windowsStoreConfig": {
-        "packageName": "",
-        "name": "logcheck"
-      }
-    }
   },
   "dependencies": {
     "@types/electron-devtools-installer": "2.2.0",
@@ -79,5 +44,40 @@
     "prettier": "^1.16.4",
     "tslint": "5.13.0",
     "typescript": "3.3.3333"
+  },
+  "keywords": [],
+  "author": "samuherek",
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "yarn"
+      },
+      "electronWinstallerConfig": {
+        "name": "loggd"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "loggd"
+      }
+    }
   }
 }
